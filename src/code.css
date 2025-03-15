@@ -1,0 +1,175 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #007bff; /* Cor primária azul */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 15px;
+}
+
+.logout-button, .toggle-auth-button, .submit-button, .app-header button {
+  background-color: #dc3545; /* Cor de destaque vermelha para botões importantes */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.app-header button {
+    background-color: #f8f9fa; /* Cor clara para botões do header */
+    color: #495057;
+}
+
+
+.logout-button:hover, .toggle-auth-button:hover, .submit-button:hover, .app-header button:hover {
+  background-color: #c82333; /* Tom mais escuro no hover */
+}
+
+.toggle-auth-button {
+  background-color: #6c757d; /* Cor secundária cinza para botões menos importantes */
+}
+
+.toggle-auth-button:hover {
+  background-color: #5a6268;
+}
+
+.app-main {
+  padding: 20px;
+  flex: 1; /* Para empurrar o footer para baixo */
+  max-width: 960px; /* Largura máxima para conteúdo principal */
+  margin: 0 auto; /* Centralizar o conteúdo */
+}
+
+.auth-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+.plan-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan-list h2 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.plan-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.plan-item:last-child {
+  border-bottom: none;
+}
+
+.plan-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.readings-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.reading-item {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reading-item input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+
+.app-footer {
+  background-color: #343a40; /* Cor escura para o footer */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
