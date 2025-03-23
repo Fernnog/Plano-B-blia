@@ -83,9 +83,12 @@ function createReadingPlan() {
         return;
     }
 
-    // Dividir os capítulos pelo número de dias
+    // *** ADICIONE ESTES console.log STATEMENTS ***
+    console.log("chaptersToRead:", chaptersToRead); // Verifique a lista completa de capítulos
+    console.log("days:", days); // Verifique o número de dias
     const plan = [];
     const chaptersPerDay = Math.ceil(chaptersToRead.length / days);
+    console.log("chaptersPerDay:", chaptersPerDay); // Verifique o cálculo de capítulos por dia
     let chapterIndex = 0;
     for (let i = 0; i < days; i++) {
         const dailyChapters = [];
@@ -93,7 +96,10 @@ function createReadingPlan() {
             dailyChapters.push(chaptersToRead[chapterIndex++]);
         }
         plan.push(dailyChapters);
+        console.log(`Dia ${i+1} chapters:`, dailyChapters); // Verifique os capítulos de cada dia
     }
+
+    console.log("plan:", plan); // Verifique a estrutura completa do plano
 
     // Salvar no localStorage
     localStorage.setItem("readingPlan", JSON.stringify(plan));
