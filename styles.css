@@ -1,54 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Fundo mais claro */
+    color: #333; /* Cor do texto padrão */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
 }
 
 header {
-    background-color: #333;
+    background-color: #2c3e50; /* Azul escuro moderno */
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    background-color: white; /* Fundo branco para o conteúdo principal */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra leve para destacar o conteúdo */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
 #plan-creation, #reading-plan {
     margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee; /* Borda sutil */
+    border-radius: 5px;
+    background-color: #fefefe; /* Branco quase puro para seções */
+}
+
+#plan-creation h2, #reading-plan h2 {
+    color: #2c3e50; /* Título na cor azul escura do header */
+    margin-top: 0;
 }
 
 #books-select {
-    width: 100%;
-    height: 100px;
+    width: calc(100% - 12px); /* Ajuste para padding e borda */
+    height: 120px; /* Aumentar altura para melhor visualização */
+    padding: 6px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 #chapters-input, #days-input {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
+    width: calc(100% - 18px); /* Ajuste para padding e borda */
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Labels em negrito */
+    color: #555;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #5cb85c;
+    padding: 12px 20px;
+    background-color: #27ae60; /* Verde moderno */
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+    margin-right: 10px; /* Espaçamento entre botões */
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #219653; /* Verde um pouco mais escuro no hover */
 }
 
 #daily-reading {
-    background-color: white;
-    padding: 15px;
+    background-color: #ecf0f1; /* Cinza claro para a leitura diária */
+    padding: 20px;
     border: 1px solid #ddd;
-    margin-bottom: 10px;
-    min-height: 50px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    border-radius: 5px;
+    font-size: 1.1em; /* Aumentar um pouco a fonte */
+}
+
+#reading-plan {
+    text-align: center; /* Centralizar conteúdo na seção de leitura */
 }
